@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';
-import { CartPage } from '../pages/CartPage';
-import { CheckoutPage } from '../pages/CheckoutPage';
+import { LoginPage } from '../../pages/LoginPage';
+import { CartPage } from '../../pages/CartPage';
+import { CheckoutPage } from '../../pages/CheckoutPage';
 
 test('Flujo completo de compra exitosa', async ({ page }) => {
   // Inicializamos todas las páginas que intervienen en el patrón POM

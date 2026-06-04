@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { CheckoutPage } from '../pages/CheckoutPage';
+import { CheckoutPage } from '../../pages/CheckoutPage';
 
 test('Debe permitir completar el flujo de envío de forma exitosa', async ({ page }) => {
 const checkout = new CheckoutPage(page);
