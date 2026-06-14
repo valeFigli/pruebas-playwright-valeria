@@ -5,6 +5,10 @@ on:
   pull_request:
     branches: [ main, master ]
 
+# 🚀 FORZAMOS A GITHUB ACTIONS A USAR NODE 24 PARA EVITAR EL WARNING DE DEPRECACIÓN
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 jobs:
   test:
     timeout-minutes: 60
@@ -25,7 +29,7 @@ jobs:
     - name: 4. Instalar los navegadores de Playwright
       run: npx playwright install --with-deps
 
-    - name: 5. Ejecutar todas las Pruebas (Web y API)
+    - name: 5. Ejecutar todas las Pruebas (Web, API y Mobile)
       run: npx playwright test
 
     - name: 6. Guardar Reporte de resultados como Artefacto
