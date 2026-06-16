@@ -1,0 +1,5 @@
+[
+  { "nombre": "standard_user", "tipo": "Estándar", "debePasar": true },
+  { "nombre": "problem_user", "tipo": "Con problemas", "debePasar": true },
+  { "nombre": "locked_out_user", "tipo": "Bloqueado", "debePasar": false }
+]
